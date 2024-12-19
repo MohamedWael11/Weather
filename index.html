@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark group my-4">
+        <div class="container w-75">
+        <a class="navbar-brand" href="#">
+            <img src="./image/logo@2x.png" class="w-25 me-2" alt="">
+            <div class="logo d-inline-block align-middle">
+                <h1>Weather</h1>
+                <small>tagline goes here</small>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100">
+            <a class="nav-link text-info border-info  px-4 active ms-auto me-5 ms-2" aria-current="page" id="home" href="#">Home</a>
+            <a class="nav-link  me-5 " href="#">News</a>
+            <a class="nav-link  me-5 " href="#">Live Cameras</a>
+            <a class="nav-link  me-5 " href="#">Photo</a>
+            <a class="nav-link  " href="#">Contact</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="search">
+        <div class="container w-75">
+            <form class="inputsearch">
+                <input type="text" placeholder="Find your location..." id="search">
+                <input type="button" value="Find" id="btn">
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="weather-table d-block" id="weathertable">
+        <div class="container w-75">
+            <div class="sub text-white ">
+
+
+                <div class="section">
+                    <div class="section-header pt-2" id="header">
+                        <div class="day" id="dayName">Monday</div>
+                        <div class="date" id="da">16December</div>
+                    </div>
+                    <div class="content">
+                        <div class="location fs-4 ms-4" id="name">cairo</div>
+                        <div class="degree">
+                            <div class="num d-inline-block" id="deg">19.2<sup>o</sup>C</div>
+                            <div class="forecast-icon h-25 d-inline-block align-middle">
+                                <img src="image/icon-sun.png" alt="" width="90" id="img-icon">
+                            </div>	
+                        </div>
+                        <div class="custom ms-3" id="mood">Clear</div>
+                        <span class="mx-3" id="umberella"><img src="image/icon-umberella.png" alt="" width="21" height="21">20%</span>
+                        <span class="me-3" id="wind"><img src="image/icon-wind.png" alt="" width="23" height="21">18km/h</span>
+                        <span class="me-3" id="compass"><img src="image/icon-compass.png" alt="" width="21" height="21">East</span>
+                    </div>
+                </div>
+
+
+                <div class="section middle text-center">
+                    <div class="section-header pt-2">
+                        <div class="day" id="day2">Tuesday</div>
+                    </div>
+                    <div class="section-content">
+                        <div class="icon h-25 mb-4">
+                            <img src="image/icon-umberella.png" alt="" id="icon2">
+                        </div>
+                        <div class="degree" id="deg2">22.1<sup>o</sup>C</div>
+                        <small id="tem">13.1<sup>o</sup></small>
+                        <div class="custom" id="mood2">Sunny</div>
+                    </div>
+                </div>
+
+                <div class="section text-center">
+                    <div class="section-header pt-2">
+                        <div class="day" id="day3">Tuesday</div>
+                    </div>
+                    <div class="section-content">
+                        <div class="icon h-25 mb-4">
+                            <img src="image/icon-umberella.png" alt="" id="icon3">
+                        </div>
+                        <div class="degree" id="deg3">22.1<sup>o</sup>C</div>
+                        <small id="temp2">13.1<sup>o</sup></small>
+                        <div class="custom" id="mood3">Sunny</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/code.js"></script>
+</body>
+</html>
